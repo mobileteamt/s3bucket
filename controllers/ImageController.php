@@ -20,6 +20,10 @@ class ImageController extends CI_Controller {
             ],
         ]);
     }
+	
+	public function index() {
+		$this->load->view('bucket-view');
+	}
 
     public function upload() {
         // Handle image upload to S3
